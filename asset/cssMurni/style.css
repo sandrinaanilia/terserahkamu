@@ -1,0 +1,246 @@
+/* navbar */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.logo-text {
+  margin-left: 10px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.menu li {
+  margin-right: 30px;
+  position: relative;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1000;
+  width: 200px; /* Adjust the width of the dropdown */
+}
+
+.dropdown-menu li {
+  list-style: none;
+  padding: 10px 20px; /* Adjust padding for a wider dropdown */
+}
+
+.dropdown-menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.login-btn {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 20px;
+  border: 1px solid #008374;
+  background-color: #008374;
+  border-radius: 5px;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.Halaman{
+    background-color: #008374;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: azure;
+}
+
+.Halaman-2{
+    margin-left: 90px;
+    margin-right: 90px;
+    text-align: justify;
+    align-items: center;
+}
+
+h2{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+header{
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: #f8f3f3;
+}
+
+.isi-1{
+    color: black;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.navbar-wkwk{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: #008374;
+    overflow: hidden;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar-wkwk a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar-wkwk a:hover {
+    background-color: #552626;
+    color: black;
+}
+
+.navbar-wkwk a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+.logo-logo{
+    width: 30px;
+    height: 30px;
+}
+
+.table-chat{
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: #552626;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    margin: 0 90px 40px;
+    margin-top: 10px;
+}
+
+
+.date{
+    font-size: 15px;
+}
+
+.footer {
+    background-color: #008374;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .footer-icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .footer-icon:hover {
+    background-color: #ddd;
+  }
+  
+  .right-section p {
+    margin: 0;
+    text-align: right;
+  }
+  

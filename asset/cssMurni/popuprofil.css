@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Open Sans',sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Popup Aktivitas Harian */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.open-button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.close-button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.grid-aktivitasharian-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.grid-aktivitasharian-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* General Styles */
+#open-popup-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #008374;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Popup Styles */
+.popup-aktivitasharian {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup-aktivitasharian-content {
+  background-color: white;
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.center {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #d9d9d9;
+}
+
+th {
+  background-color: #008374;
+  color: white;
+}
+
+#closeTableBtn {
+  padding: 8px 20px;
+  background-color: #008374;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#closeTableBtn:hover {
+  background-color: #005b4f;
+}
+/* End of Popup Aktivitas Harian*/
+
+/* Popup Aktivitas Bulanan/Tahunan*/
+.popup-aktivitasbulanan-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aktivitasbulanan-open--button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.aktivitasbulanan-close-button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.aktivitasbulanan-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.aktivitasbulanan-grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+#aktivitasbulanan-open-popup-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #008374;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-aktivitasbulanan {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.aktivitasbulanan-popup-content {
+  background-color: white;
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.aktivitasbulanan-center {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #d9d9d9;
+}
+
+th {
+  background-color: #008374;
+  color: white;
+}
+
+.aktivitasbulanan-close-btn-container {
+  display: grid;
+  justify-content: center;
+}
+
+.aktivitasbulanan-close-btn {
+  padding: 10px 20px;
+  background-color: #008374;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* End of Popup Aktivitas Bulanan/Tahunan*/
+
+/* Popup Ekstrakulikuler */
+.ekstrakulikuler-popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ekstrakulikuler-open-button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.ekstrakulikuler-close-button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.ekstrakulikuler-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.ekstrakulikuler-grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+#ekstrakulikuler-open-popup-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #008374;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-ekstrakulikuler {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.ekstrakulikuler-popup-content {
+  background-color: white;
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.ekstrakulikuler-center {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #d9d9d9;
+}
+
+th {
+  background-color: #008374;
+  color: white;
+}
+
+.ekstrakulikuler-close-btn-container {
+  display: grid;
+  justify-content: center;
+}
+
+.ekstrakulikuler-close-btn {
+  padding: 10px 20px;
+  background-color: #008374;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* End of Popup Ekstrakulikuler*/

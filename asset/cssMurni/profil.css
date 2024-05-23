@@ -1,0 +1,430 @@
+/* navbar */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.logo-text {
+  margin-left: 10px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.menu li {
+  margin-right: 30px;
+  position: relative;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1000;
+  width: 200px; /* Adjust the width of the dropdown */
+}
+
+.dropdown-menu li {
+  list-style: none;
+  padding: 10px 20px; /* Adjust padding for a wider dropdown */
+}
+
+.dropdown-menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.login-btn {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 20px;
+  border: 1px solid #008374;
+  background-color: #008374;
+  border-radius: 5px;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+header {
+  background-color: #008374;
+  padding: 100px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+  color: white;
+}
+
+/* Biografi */
+.biografi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  margin: 0 auto;
+  height: 380px;
+  padding: 60px 100px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.biografi-content h2 {
+  text-align: left;
+  line-height: 1.2;
+  margin: 1rem 0 1rem;
+}
+
+.biografi-content h3 {
+  font-size: 1.5rem;
+}
+
+.biografi-content p {
+  font-size: 1rem;
+  margin: 2rem 0 3rem;
+}
+/* End of Biografi */
+
+/* Sejarah */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding: 70px 100px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #008374;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: auto;
+}
+.history img {
+  max-width: 200px;
+  border-radius: 8px;
+}
+.history-text {
+  flex: 1;
+  color: white;
+}
+/* End of Sejarah*/
+
+/* Visi Misi */
+.visimisi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  margin: 0 auto;
+  height: 380px;
+  padding: 70px 100px;
+}
+
+.visimisi-content {
+  flex: 1;
+  margin: 2rem 0 3rem;
+  padding: 40px;
+}
+
+.gambar {
+  flex: 1;
+}
+
+.gambar img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.aktivitas-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 1px solid #008374;
+  background-color: #008374;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  background-color: white;
+  color: black;
+}
+/* End Visi Misi */
+
+/* Daftar Sekarang */
+.daftar-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.daftar-content {
+  display: grid;
+  grid-template-columns: 3fr;
+  justify-items: center;
+}
+
+.daftar {
+  background-color: #008374;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.daftar h2 {
+  margin: 0;
+  font-size: 24px;
+}
+/* End of Daftar Sekarang */
+
+/* Footer */
+.footer {
+  background-color: #008374;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.footer-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-icon:hover {
+  background-color: #ddd;
+}
+
+.right-section p {
+  margin: 0;
+  text-align: right;
+}
+/* End of Footer */
+
+/* Popup Aktivitas Harian */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.open-button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.close-button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.grid-aktivitasharian-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.grid-aktivitasharian-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* General Styles */
+#open-popup-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #008374;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Popup Styles */
+.popup-aktivitasharian {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup-aktivitasharian-content {
+  background-color: white;
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.center {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #d9d9d9;
+}
+
+th {
+  background-color: #008374;
+  color: white;
+}
+
+#closeTableBtn {
+  padding: 8px 20px;
+  background-color: #008374;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#closeTableBtn:hover {
+  background-color: #005b4f;
+}
+/* End of Popup Aktivitas Harian*/

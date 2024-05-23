@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Aktivitas</title>
+    <link rel="stylesheet" href="css/popup.css" />
+  </head>
+  <body>
+    <!-- Button to Open the Popup -->
+    <button id="open-popup-btn">Aktivitas Bulanan/Tahunan</button>
+
+    <!-- Popup for Aktivitas -->
+    <div id="aktivitasbulanan-popup" class="popup-aktivitasbulanan">
+      <div class="aktivitasbulanan-popup-content">
+        <h4>Informasi</h4>
+        <h2>Aktivitas Bulanan/Tahunan</h2>
+        <table>
+          <tr>
+            <td>Masa Ta’aruf</td>
+          </tr>
+          <tr>
+            <td>Ziarah</td>
+          </tr>
+          <tr>
+            <td>Tasmi’</td>
+          </tr>
+          <tr>
+            <td>Ro’an</td>
+          </tr>
+          <tr>
+            <td>Muhadloroh</td>
+          </tr>
+          <tr>
+            <td>Agenda Ramadhan</td>
+          </tr>
+        </table>
+        <div class="aktivitasbulanan-close-btn-container">
+          <button class="aktivitasbulanan-close-btn" onclick="closePopup()">Tutup</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="aktivitasbulanan.js"></script>
+  </body>
+</html>

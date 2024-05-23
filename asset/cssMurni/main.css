@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Open Sans',sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Mengatur logo dan teks agar berada di tengah-tengah vertikal */
+}
+
+.logo img {
+  width: 60px; /* Sesuaikan ukuran logo */
+}
+
+.logo-text {
+  margin-left: 10px; /* Jarak antara logo dan teks */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 30px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0;
+  list-style: none;
+  padding: 0.1rem;
+}
+
+.login-btn {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 1px solid #008374;
+  background-color: #008374;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/*End Nav*/
+
+.bg-atas{
+  background-color: #008374;
+  text-align: center;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  padding: 100px;
+}
+
+.bg-tengah{
+  
+  margin: 0 40px;
+  text-align: justify;
+  font-size: 20px;
+  color: #000000;
+  padding: 0px;
+}
+
+.bg-tengah-2{
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 0 10%;
+  box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.10);
+  text-align: left;
+  box-shadow: 100px;
+}
+
+section{
+  font-size: 10px;
+  margin: 20px;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 20px;
+}
+
+
+.bg-last{
+  background-color: #008374;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff
+}
+
+.bg-last{
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.nav-bwh{
+  background-color: #008374;
+  
+}
+
+img{
+  height: 15%;
+  width: 10%;
+  margin: 10px;
+}
+
+
+span{
+  color: #fff;
+}
+.tombol .tombol-nih{
+  font-size: 25px;
+  padding: 10px;
+  width: 200px;
+}
+
+.tombol-nih{
+  background-color: #008374;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 20px;
+  font-style: normal;
+  margin-left: 40%;
+  margin-right: 40%;
+  font-size: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 20px 2px rgba(0, 0, 0, 0.10);
+}
+
+.footer {
+  background-color: #008374;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.footer-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-icon:hover {
+  background-color: #ddd;
+}
+
+.right-section p {
+  margin: 0;
+  text-align: right;
+}
